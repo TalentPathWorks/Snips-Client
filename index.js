@@ -1,5 +1,5 @@
 import SNIPS from './lib/snippet-data.js';
-import { renderSnips } from './lib/snippets.js';
+import { renderSnips, highlightSnips } from './lib/snippets.js';
 
 // map over the SNIPS
 import { search } from './lib/search.js';
@@ -15,4 +15,5 @@ searchForm.addEventListener('submit', event => {
   search(searchText);
 });
 
-hljs.initHighlightingOnLoad();
+// hljs.initHighlightingOnLoad();
+highlightSnips();
