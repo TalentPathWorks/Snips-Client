@@ -1,11 +1,13 @@
-import SNIPS from './lib/snippet-data.js';
-import { renderSnips, highlightSnips } from './lib/snippets.js';
+import { renderSnips, highlightSnips, fetchSnippets } from './lib/snippets.js';
 
 // map over the SNIPS
 import { search } from './lib/search.js';
 
-renderSnips(SNIPS);
-
+async function init() {
+  const snippets = await fetchSnippets();
+  renderSnips(snippets);
+}
+init();
 const searchForm = document.getElementById('search-bar');
 // const searchText = document.getElementById('search-text');
 
