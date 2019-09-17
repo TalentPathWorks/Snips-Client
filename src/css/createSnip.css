@@ -1,0 +1,46 @@
+#createSnip h1 {
+  background-color: #2B303A;
+  text-align: left;
+  color: white;
+  padding-left: 20px;
+}
+
+#createSnip {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 605px;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+#createSnip label,
+input {
+  padding-left: 10px;
+  font-size: 1.2em;
+  padding-top: 7px;
+
+}
+
+#createSnip input {
+  background-color: #E1E1E1;
+  border-style: solid;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#createSnip select {
+  margin-left: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 7px;
+  height: 33px;
+}
+
+#createSnip button {
+  background-color: #2B303A;
+  color: #FFFFFF;
+}

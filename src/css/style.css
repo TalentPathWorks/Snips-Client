@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+@import "resets.css";
+@import "palette.css";
+@import "navigation.css";
+@import "snippets.css";
+@import "search.css";
+@import "createSnip.css";
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--snips-white);
+}
+
+.info-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+
+.info-block:nth-child(2n) {
+  background-color: var(--snips-grey);
+}
+
+.info-block:nth-child(2n + 1) {
+  background-color: var(--snips-white);
+}
+
+.info-block img {
+  width: 100%;
+}
+
+.info-block p {
+  padding: 0 5rem;
+  font-size: 20px;
+  line-height: 2.2rem;
+}
+
+#competitors {
+  background-color: var(--snips-purple);
+}
+
+#competitors h2 {
+  padding: 2rem;
+  text-align: center;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.icon-container img {
+  max-width: 10rem;
+  max-height: 10rem;
+}
