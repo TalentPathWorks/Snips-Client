@@ -60,22 +60,26 @@ export default class CreateSnip extends React.Component {
         </select>
         <br/>
         <label>Description</label>
-        <input
-          type="text"
-          name="description-text"
-          id="description-text"
-          value={this.state.searchText}
-          onChange={this.handleDescriptionChange}
-        /><br/>
+        <textarea
+        
+        name="description-text"
+        id="description-text"
+        value={this.state.searchText}
+        onChange={this.handleDescriptionChange}
+        >
+        </textarea>
+     <br/>
         <label>Code</label>
-        <input
-          type="text"
-          name="search-text"
-          id="search-text"
-          value={this.state.searchText}
+        <textarea
+        name="code-text"
+        id="code-text"
+        value={this.state.searchText}
           onChange={this.handleCodeChange}
-        /><br/>
+        >
+        </textarea>
+        <br/>
         <button type="submit">Create</button>
+        <br/>
       </form>
     );
   }

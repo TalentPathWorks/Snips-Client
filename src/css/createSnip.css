@@ -32,6 +32,26 @@ input {
   margin-right: 10px;
 }
 
+#code-text {
+  width: 97%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-color: #E1E1E1;
+  resize: none;
+  margin-left: 10px
+}
+
+#description-text {
+  width: 97%;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  background-color: #E1E1E1;
+  resize: none;
+  margin-left: 10px
+}
+
 #createSnip select {
   margin-left: 10px;
   border-radius: 5px;
@@ -43,4 +63,8 @@ input {
 #createSnip button {
   background-color: #2B303A;
   color: #FFFFFF;
+  width: 100px;
+  margin-left: 80%;
+  padding: 5px;
+  border-radius: 5px;
 }
